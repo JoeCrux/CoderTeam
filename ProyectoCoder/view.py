@@ -19,3 +19,20 @@ def landing(self):
 	miContexto = Context()
 	documento = plantilla.render(miContexto)
 	return HttpResponse(documento)
+
+
+def elements(self):
+	miHtml = open('C:/Proyectospython/ProyectoCoder/ProyectoCoder/Plantillas/elements.html')
+	plantilla = Template(miHtml.read())
+	miHtml.close()
+	miContexto = Context()
+	documento = plantilla.render(miContexto)
+	return HttpResponse(documento)
+
+def generic(self):
+	miHtml = open('C:/Proyectospython/ProyectoCoder/ProyectoCoder/Plantillas/generic.html')
+	plantilla = Template(miHtml.read())
+	miHtml.close()
+	miContexto = Context()
+	documento = plantilla.render(miContexto)
+	return HttpResponse(documento)
