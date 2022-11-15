@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 	<head>
-		<title>Elements - Forty by HTML5 UP</title>
+		<title>Desafio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
@@ -52,144 +52,43 @@
 									<hr class="major" />
 
 									<!-- Elements -->
-										<h2 id="elements">Elements</h2>
+										<h2 id="elements">Informacion</h2>
 										<div class="row gtr-200">
-											<div class="col-6 col-12-medium">	
-
-												<!-- Lists -->
-													<h3>Lists</h3>
-													<div class="row">
-														<div class="col-6 col-12-small">
-
-															<h4>Unordered</h4>
-															<ul>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Sagittis lorem eleifend.</li>
-																<li>Felis dolore viverra.</li>
-															</ul>
-
-														</div>
-														<div class="col-6 col-12-small">
-
-															<h4>Ordered</h4>
-															<ol>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Etiam vel lorem sed viverra.</li>
-																<li>Felis dolore viverra.</li>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Etiam vel lorem sed viverra.</li>
-																<li>Felis dolore viverra.</li>
-															</ol>										
-
-														</div>
-													</div>											
+											<div class="col-6 col-12-medium">																							
 
 												<!-- Table -->
-													<h3>Table</h3>
+													<h3>Personas</h3>
 
-													<h4>Default</h4>
+													<h4>Familiares</h4>
 													<div class="table-wrapper">
 														<table>
 															<thead>
 																<tr>
-																	<th>Name</th>
-																	<th>Description</th>
-																	<th>Price</th>
+																	<th>Edad</th>
+																	<th>Nombre</th>
+																	<th>Fecha Nac</th>
 																</tr>
 															</thead>
 															<tbody>
-																<tr>
-																	<td>Item1</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item2</td>
-																	<td>Vis ac commodo adipiscing arcu aliquet.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item3</td>
-																	<td> Morbi faucibus arcu accumsan lorem.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item4</td>
-																	<td>Vitae integer tempus condimentum.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item5</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
+																{% for persona in personas %}
+																	<tr>
+																		<td>{{persona.edad}}</td>
+																		<td>{{persona.nombre}}</td>
+																		<td>{{persona.fechnac}}</td>
+																		
+																	</tr>											
+																{% endfor %}
 															</tbody>
-															<tfoot>
-																<tr>
-																	<td colspan="2"></td>
-																	<td>100.00</td>
-																</tr>
-															</tfoot>
-														</table>
-													</div>
-
-													<h4>Alternate</h4>
-													<div class="table-wrapper">
-														<table class="alt">
-															<thead>
-																<tr>
-																	<th>Name</th>
-																	<th>Description</th>
-																	<th>Price</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>Item1</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item2</td>
-																	<td>Vis ac commodo adipiscing arcu aliquet.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item3</td>
-																	<td> Morbi faucibus arcu accumsan lorem.</td>
-																	<td>29.99</td>
-																</tr>
-																<tr>
-																	<td>Item4</td>
-																	<td>Vitae integer tempus condimentum.</td>
-																	<td>19.99</td>
-																</tr>
-																<tr>
-																	<td>Item5</td>
-																	<td>Ante turpis integer aliquet porttitor.</td>
-																	<td>29.99</td>
-																</tr>
-															</tbody>
-															<tfoot>
-																<tr>
-																	<td colspan="2"></td>
-																	<td>100.00</td>
-																</tr>
-															</tfoot>
+													
 														</table>
 													</div>
 
 											</div>
 											<div class="col-6 col-12-medium">
-												
-													<h4>Left &amp; Right</h4>
-													<p><span class="image left"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget tempus vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-													<p><span class="image right"><img src="images/pic10.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget tempus vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-
 												<!-- Box -->
-													<h3>Box</h3>
+													<h3>Datos Particulares</h3>
 													<div class="box">
-														<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum.</p>
+														<p>Los datos son ficticios solo a los fines de probar la consigna del desafio.</p>
 													</div>
 
 											</div>
@@ -204,7 +103,7 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; My</li><li>Design: <a >JLC</a></li>
 							</ul>
 						</div>
 					</footer>
