@@ -36,3 +36,11 @@ def generic(self):
 	miContexto = Context()
 	documento = plantilla.render(miContexto)
 	return HttpResponse(documento)
+
+def desafio(self):
+	miHtml = open('C:/Proyectospython/ProyectoCoder/ProyectoCoder/Plantillas/desafioMVT.html')
+	plantilla = Template(miHtml.read())
+	miHtml.close()
+	miContexto = Context()
+	documento = plantilla.render(miContexto)
+	return HttpResponse(documento)
