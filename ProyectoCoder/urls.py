@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ProyectoCoder.view import saludo,inicio,landing,generic,elements
+from ProyectoCoder.view import saludo,home,landing,generic,elements
 from AppCoder.views import desafio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', saludo),
-    path('inicio/', inicio),
-    path('landing/', landing),
-    path('elements/', elements),
-    path('generic/', generic),
-    path('desafio/', desafio),
+    path('saludo/', saludo, name='saludo'),
+    path('home/', home, name='home'),
+    path('landing/', landing, name='landing'),
+    path('elements/', elements, name='elements'),
+    path('generic/', generic, name='generic'),
+    path('', desafio, name='desafio'),
 ]

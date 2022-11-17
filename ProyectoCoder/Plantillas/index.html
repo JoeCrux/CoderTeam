@@ -16,7 +16,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>TEAM</strong> <span>P. Carrizo & J. Cruz</span></a>
+						<a href="index.html" class="logo"><strong>Koan</strong> <span>Joe Cruz</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -25,10 +25,11 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'landing' %}">Landing</a></li>
+							<li><a href="{% url 'generic' %}">Generic</a></li>
+							<li><a href="{% url 'elements' %}">Elements</a></li>
+							<li><a href="{% url 'desafio' %}">Desafio</a></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>

@@ -6,7 +6,7 @@ from django.template import loader
 def saludo(request):
 	return HttpResponse('Hola Django - Coder')
 
-def inicio(self):
+def home(self):
 	plantilla = loader.get_template('index.html')
 	documento = plantilla.render()
 	return HttpResponse(documento)
