@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS = ['C:/Proyectospython/ProyectoCoder/ProyectoCoder/static']
+STATICFILES_DIRS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -54,12 +54,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ProyectoCoder.urls'
+ROOT_URLCONF = 'AppCoder.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Proyectospython/ProyectoCoder/ProyectoCoder/Plantillas'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
