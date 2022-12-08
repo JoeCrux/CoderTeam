@@ -4,6 +4,11 @@ from AppCoder.models import Persona
 from django.http import HttpResponse
 from django.template import Context, Template
 from django.template import loader
+from django.views.generic import DeleteView
+
+class BorrarPersona(DeleteView):
+	model  = Persona
+	success_url = 'AppCoder/desafioMVT.html'
 
 def desafio(request):
     personas = Persona.objects.all()

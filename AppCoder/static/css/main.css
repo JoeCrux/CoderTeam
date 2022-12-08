@@ -3114,8 +3114,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+		background-color: #bb242b;
+		box-shadow: 0 0 0.25em 0 rgba(13, 175, 162, 0.15);
 		cursor: default;
 		font-weight: 600;
 		height: 3.25em;
@@ -3145,7 +3145,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				background-color: #ffffff;
-				color: #242943;
+				color: #28a173;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3153,11 +3153,11 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #a70c0c;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #8d0a8d;
 			}
 
 		#header nav {
@@ -3275,7 +3275,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
+				color: #18cf6a;
 			}
 
 			#header.alt.style6 .logo strong {
